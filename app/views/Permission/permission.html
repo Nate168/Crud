@@ -1,0 +1,63 @@
+﻿<div ng-include src="'app/views/Menu/nav.html'" />
+<div class="container flex" style="margin-top:3em;">
+
+    <md-card layout-sm="column" style="margin-top:5em" ng-cloak>
+
+        <!--TITLE & when someone is selected -->
+        <md-data-table-toolbar>
+            <h2 class="md-title"><i class="fa fa fa-key"></i>Permission</h2>
+            <md-fab-trigger style="float:left;">
+                <md-button aria-label="menu" class="md-fab md-warn" ui-sref="create">
+                    <md-icon class="fa fa-2x fa-plus" </md-icon>
+                </md-button>
+            </md-fab-trigger>
+            <md-fab-actions>
+        </md-data-table-toolbar>
+
+
+        <md-data-table-container class="show-gt-sm flex">
+            <!--<input type="text" ng-model="search" />-->
+            <table md-data-table md-progress="deferred">
+                <thead md-order="query.order" md-trigger="onpagechange">
+                    <tr>
+                        <th order-by="PermissionName" name="Permission Name"></th>
+                        <th order-by="PermissionId" name="ID"></th>
+                        <th order-by="Active" name="Active"></th>
+                        <th order-by="Description" name="Description"></th>
+                        <th order-by="CreatedDate" name="Created Date"></th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr md-auto-select
+                        ng-repeat="result in results | orderBy: query.order | limitTo: query.limit: (query.page - 1) * query.limit  ">
+
+                        <td>{{result.PermissionName}}</td>
+                        <td><a ui-sref="editPermission({Pid: result.PermissionId})">{{result.PermissionId}}</a> </td>
+                        <td>{{result.Active}}</td>
+                        <td>{{result.Description}}</td>
+                        <td>{{result.CreatedDate |date:shortTime}}</td>
+
+                        <td><button class="btn btn-danger"><i ng-click="delete(result,$index)" class="fa fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Pagination for the table -->
+
+            <md-card>
+                <md-data-table-pagination md-limit="query.limit" md-page="query.page" md-total="{{count}}"
+                                          md-trigger="onpagechange">
+
+                </md-data-table-pagination>
+
+
+            </md-card>
+
+
+
+
+        </md-data-table-container>
+    </md-card>
+
+</div>

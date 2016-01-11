@@ -1,0 +1,56 @@
+﻿<div ng-include src="'app/views/Menu/nav.html'" />
+<div class="container flex" style="margin-top:3em;">
+
+    <section class="md-whiteframe-z1" ng-controller="ServerCtrl" ng-cloak>
+        <md-toolbar style="margin-top:4em;background-color:#4D91D4">
+            <h3 class="text-center"><i class="fa fa-pencil-square-o"></i>Server</h3>
+        </md-toolbar>
+
+        <form name="projectForm" ng-submit="updateResult(edit)">
+            <div layout-gt-sm="row" flex-gt-sm>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Server Name</label>
+                    <input required name="ServerName" data-ng-model="edit.ServerName">
+                    <div ng-messages="projectForm.ServerName.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Edit Id</label>
+                    <input name="Edit" data-ng-model="edit.ServerName">
+                    <div ng-messages="projectForm.Edit.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+            </div>
+            <div layout-gt-sm="row" flex-gt-sm>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Mode Id</label>
+                    <input required name="ModeId" data-ng-model="edit.ModeId">
+                    <div ng-messages="projectForm.ModeId.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+
+
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Server ID</label>
+                    <input required name="ModeServerId" data-ng-model="edit.ModeServerId">
+                    <div ng-messages="projectForm.ModeServerId.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+            </div>
+
+
+            <md-button class="md-raised md-primary" ng-disabled="projectForm.$invalid">Updated Permission!</md-button>
+            <md-button class="md-raised md-warn" ng-click="cancel()">Cancel</md-button>
+            <br />
+            <br />
+        </form>
+
+    </section>
+
+
+</div>

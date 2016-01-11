@@ -1,0 +1,118 @@
+﻿<div ng-include src="'app/views/Menu/nav.html'" />
+<div class="container flex" style="margin-top:3em;">
+
+
+    <section class="md-whiteframe-z1" data-ng-model="LoginCtrl" ng-cloak>
+
+        <md-toolbar style="margin-top:4em;background-color:#4D91D4">
+
+            <h3 class="text-center ">Edit login </h3>
+        </md-toolbar>
+        <md-whiteframe class="">
+
+            <div class="row title">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <form name="projectForm" ng-submit="updateResult(edit)">
+                        <div layout-gt-sm="row" flex-gt-sm>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>User name</label>
+                                <input required name="Active" data-ng-model="edit.UserName">
+                                <div ng-messages="projectForm.description.$error">
+                                    <div ng-message="required">This is required.</div>
+
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>First Name</label>
+                                <input required name="FirstName" data-ng-model="edit.FirstName">
+                                <div ng-messages="projectForm.FirstName.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row" flex-gt-sm>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Client Email</label>
+                                <input type="email" name="Email" ng-model="edit.Email"
+                                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                                <div ng-messages="projectForm.CreatedBy.$error" role="alert">
+                                    <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                        Your email must be between 10 and 100 characters long and look like an e-mail address.
+                                    </div>
+                                </div>
+                            </md-input-container>
+
+                            <md-input-container disabled class="md-block" flex-gt-sm>
+                                <label>Phone</label>
+                                <input name="Phone" data-ng-model="edit.Phone" ng-pattern="/^[0-9]--{3}[0-9]{3}-[0-9]{4}$/">
+                                <div class="hint" ng-show="showHints"></div>
+                                <div ng-messages="userForm.Phone.$error" ng-hide="showHints">
+                                    <div ng-message="pattern"> - Please enter a valid phone number.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+
+                        <div layout-gt-sm="row" flex-gt-sm>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Active</label>
+                                <input required name="Active" data-ng-model="edit.Active">
+                                <div ng-messages="projectForm.Active.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Create By</label>
+                                <input required name="CreateBy" data-ng-model="edit. CreatedBy">
+                                <div ng-messages="projectForm.UpdateBy.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+
+
+                        </div>
+
+
+                        <div layout-gt-sm="row" flex-gt-sm>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>RoleName</label>
+                                <input required name="Active" data-ng-model="roles.RoleName">
+                                <div ng-messages="projectForm.Active.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>System Admin</label>
+                                <input required name="CreateBy" data-ng-model="roles.Description">
+                                <div ng-messages="projectForm.UpdateBy.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+
+
+
+
+
+
+                            <md-button class="md-raised md-primary" ng-disabled="projectForm.$invalid">Updated Login!</md-button>
+                            <md-button class="md-raised md-warn" ng-click="cancel()">Cancel</md-button>
+
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+
+
+
+        </md-whiteframe>
+    </section>
+
+</div>

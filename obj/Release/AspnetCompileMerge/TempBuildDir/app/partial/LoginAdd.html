@@ -1,0 +1,76 @@
+﻿<div ng-include src="'app/views/Menu/nav.html'" />
+<div class="container flex" style="margin-top:3em;">
+    <section class="md-whiteframe-z1" data-ng-model="LoginCtrl" ng-cloak>
+
+        <md-toolbar style="margin-top:4em;background-color:#4D91D4">
+
+            <h3 class="text-center ">Edit login </h3>
+        </md-toolbar>
+        <md-whiteframe class="">
+
+            <div class="row title">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <form name="projectForm">
+                        <div layout-gt-sm="row" flex-gt-sm>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Guid</label>
+                                <input required name="Active" data-ng-model="create.Guid">
+                                <div ng-messages="projectForm.description.$error" value="e4c9f14f-f27a-4609-95d5-1660e9f427e4">
+                                    <div ng-message="required">This is required.</div>
+
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>First Name</label>
+                                <input required name="FirstName" data-ng-model="create.FirstName">
+                                <div ng-messages="projectForm.FirstName.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row" flex-gt-sm>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Client Email</label>
+                                <input type="email" name="Email" ng-model="create.Email"
+                                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                                <div ng-messages="projectForm.CreatedBy.$error" role="alert">
+                                    <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                        Your email must be between 10 and 100 characters long and look like an e-mail address.
+                                    </div>
+                                </div>
+                            </md-input-container>
+
+                            <md-input-container disabled class="md-block" flex-gt-sm>
+                                <label>Phone</label>
+                                <input name="Phone" data-ng-model="create.Phone">
+                                <div class="hint" ng-show="showHints"></div>
+                                <div ng-messages="userForm.Phone.$error" ng-hide="showHints">
+                                    <div ng-message="pattern"> - Please enter a valid phone number.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+
+                        <div layout-gt-sm="row" flex-gt-sm>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Active</label>
+                                <input required name="Active" data-ng-model="create.Active">
+                                <div ng-messages="projectForm.Active.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+
+
+
+
+                        </div>
+
+                        <md-button class="md-raised md-primary" ng-disabled="projectForm.$invalid" ng-click="add(create)">Create Login!</md-button>
+                        <md-button class="md-raised md-warn" ng-click="cancel()">Cancel</md-button>
+                    </form>
+                </div>
+            </div>
+        </md-whiteframe>
+    </section>
+</div>

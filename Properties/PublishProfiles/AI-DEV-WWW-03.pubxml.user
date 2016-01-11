@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>\\AI-DEV-WWW-03\internal</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/App.js">
+      <publishTime>01/08/2016 17:07:38</publishTime>
+    </File>
+    <File Include="app/partial/Add.html">
+      <publishTime>01/05/2016 16:34:25</publishTime>
+    </File>
+    <File Include="app/partial/Configuration.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/partial/createModeserve.html">
+      <publishTime>01/08/2016 11:55:11</publishTime>
+    </File>
+    <File Include="app/partial/LoginAdd.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/partial/modeAdd.html">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/partial/ModeConfig-create.html">
+      <publishTime>01/08/2016 15:06:52</publishTime>
+    </File>
+    <File Include="app/partial/permissionAdd.html">
+      <publishTime>01/05/2016 16:34:25</publishTime>
+    </File>
+    <File Include="app/partial/roleAdd.html">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/partial/serverAdd.html">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/partial/ValueAdd.html">
+      <publishTime>01/07/2016 20:28:14</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/.bower.json">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/ARCHIVE.md">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/bower.json">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/dist/md-data-table.css">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/dist/md-data-table.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/dist/md-data-table.min.css">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/dist/md-data-table.min.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/index.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/LICENSE.md">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/package.json">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/angular-material-data-table/README.md">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/dataAccess.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/bootstrap.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/bootstrap.min.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/common-scripts.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/jquery-1.8.3.min.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/jquery.dcjqaccordion.2.7.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/jquery.gritter.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/jquery.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/jquery.nicescroll.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/design/jquery.scrollTo.min.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/Toaster/angular-toastr.css">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/Toaster/angular-toastr.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/scripts/Toaster/angular-toastr.min.css">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/Toaster/angular-toastr.min.js">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="app/scripts/Toaster/angular-toastr.tpls.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/scripts/Toaster/angular-toastr.tpls.min.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/services/dataAccess.js.aspx">
+      <publishTime>01/08/2016 14:40:34</publishTime>
+    </File>
+    <File Include="app/views/Config/config.html">
+      <publishTime>01/05/2016 18:30:21</publishTime>
+    </File>
+    <File Include="app/views/Config/config.js">
+      <publishTime>01/05/2016 18:30:21</publishTime>
+    </File>
+    <File Include="app/views/Config/editConfig.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Login/login.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Login/login.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Login/loginEdit.html">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Main/main.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Main/main.js">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Menu/nav.html">
+      <publishTime>01/08/2016 14:55:11</publishTime>
+    </File>
+    <File Include="app/views/Menu/nav.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Mode/mode.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Mode/mode.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Mode/modeEdit.html">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/modeConfig/modeConfig-edit.html">
+      <publishTime>01/08/2016 16:58:08</publishTime>
+    </File>
+    <File Include="app/views/modeConfig/modeConfig.controller.js">
+      <publishTime>01/08/2016 16:50:42</publishTime>
+    </File>
+    <File Include="app/views/modeConfig/modeConfig.html">
+      <publishTime>01/08/2016 17:28:48</publishTime>
+    </File>
+    <File Include="app/views/Permission/permission.html">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Permission/permission.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Permission/permissionEdit.html">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Role/Role.js">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Role/RoleEdit.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Role/Roles.html">
+      <publishTime>01/04/2016 17:03:19</publishTime>
+    </File>
+    <File Include="app/views/Server/server.html">
+      <publishTime>01/04/2016 10:44:34</publishTime>
+    </File>
+    <File Include="app/views/Server/server.js">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Server/serverEdit.html">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="app/views/Value/value.html">
+      <publishTime>01/08/2016 14:24:50</publishTime>
+    </File>
+    <File Include="app/views/Value/value.js">
+      <publishTime>01/08/2016 14:40:14</publishTime>
+    </File>
+    <File Include="app/views/Value/valueEdit.html">
+      <publishTime>01/07/2016 12:44:28</publishTime>
+    </File>
+    <File Include="bin/AI.Common.dll">
+      <publishTime>01/04/2016 09:21:21</publishTime>
+    </File>
+    <File Include="bin/AI.Internal.Web.dll">
+      <publishTime>01/08/2016 16:39:27</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>01/04/2016 09:21:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/04/2016 09:21:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/04/2016 09:21:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>01/04/2016 09:21:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>01/04/2016 09:21:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>01/04/2016 09:21:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>01/04/2016 09:21:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/04/2016 09:21:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/04/2016 09:21:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>01/04/2016 09:21:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/04/2016 09:21:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>01/04/2016 09:21:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/04/2016 09:21:33</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/04/2016 09:21:33</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>01/04/2016 09:21:33</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>01/04/2016 09:21:33</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/04/2016 09:21:33</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>01/04/2016 09:21:33</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/04/2016 09:21:34</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>01/08/2016 17:01:16</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/04/2016 10:38:49</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>01/08/2016 17:29:39</publishTime>
+    </File>
+    <File Include="styles/bootstrap-theme.min.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/bootstrap.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/bootstrap.min.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/jquery.gritter.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/jquery.gritter0.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/sb-admin-rtl.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/style-responsive.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="styles/style.css">
+      <publishTime>01/08/2016 17:09:58</publishTime>
+    </File>
+    <File Include="styles/table-responsive.css">
+      <publishTime>01/04/2016 10:38:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/05/2016 13:22:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

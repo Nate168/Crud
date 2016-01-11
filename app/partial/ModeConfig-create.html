@@ -1,0 +1,53 @@
+﻿
+<div class="container flex" style="margin-top:3em;">
+
+    <section class="md-whiteframe-z1" ng-controller="modeConfigCtrl as vm" ng-cloak>
+        <md-toolbar style="margin-top:4em;background-color:#4D91D4">
+            <h3 class="text-center"><i class="fa fa-pencil-square-o"></i>Mode Config</h3>
+        </md-toolbar>
+
+        <form name="projectForm">
+
+
+
+            <md-input-container class="md-block">
+
+                <md-select placeholder="assign Configuration" ng-model="create.Configuration" md-on-open="vm.loadCreate()">
+                    <md-option ng-value="Config" ng-repeat="Config in vm.Config">{{Config.ConfigName}}</md-option>
+                </md-select>
+
+             </md-input-container>
+
+
+
+            <md-input-container class="md-block">
+
+                <md-select placeholder="assign Mode" ng-model="create.ModeConfig" md-on-open="vm.loadCreate()">
+                    <md-option ng-value="Mode" ng-repeat="Mode in vm.allmode">{{Mode.ModeName}}</md-option>
+                </md-select>
+
+            </md-input-container>
+
+
+
+      
+            <md-input-container class="md-block" disabled>
+                <label>Value</label>
+                <input required name="Value" data-ng-model="create.Value">
+                <div ng-messages="projectForm.Value.$error">
+                    <div ng-message="required">This is required.</div>
+
+                </div>
+            </md-input-container>
+
+      
+            <md-button class="md-raised md-primary" ng-disabled="projectForm.$invalid" ng-click="vm.add(create,second)">Create!</md-button>
+            <md-button class="md-raised md-warn" ng-click="vm.cancel()">Cancel</md-button>
+            <br />
+            <br />
+        </form>
+
+
+    </section>
+
+</div>

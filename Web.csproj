@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CC0D942-1C71-49F2-8D8A-A9B978F75880}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AI.Internal.Web</RootNamespace>
+    <AssemblyName>AI.Internal.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AI.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AI.Common.1.5.0.0\lib\net46\AI.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\partial\loginAdd.html" />
+    <Content Include="app\partial\modeAdd.html" />
+    <Content Include="app\partial\roleAdd.html" />
+    <Content Include="app\partial\serverAdd.html" />
+    <Content Include="app\partial\ModeConfig-create.html" />
+    <Content Include="app\scripts\angular-material-data-table\dist\md-data-table.css" />
+    <Content Include="app\scripts\angular-material-data-table\dist\md-data-table.js" />
+    <Content Include="app\scripts\angular-material-data-table\dist\md-data-table.min.css" />
+    <Content Include="app\scripts\angular-material-data-table\dist\md-data-table.min.js" />
+    <Content Include="app\scripts\angular-material-data-table\index.js" />
+    <Content Include="app\scripts\design\bootstrap.js" />
+    <Content Include="app\scripts\design\bootstrap.min.js" />
+    <Content Include="app\scripts\design\common-scripts.js" />
+    <Content Include="app\scripts\design\jquery-1.8.3.min.js" />
+    <Content Include="app\scripts\design\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="app\scripts\design\jquery.gritter.js" />
+    <Content Include="app\scripts\design\jquery.js" />
+    <Content Include="app\scripts\design\jquery.nicescroll.js" />
+    <Content Include="app\scripts\design\jquery.scrollTo.min.js" />
+    <Content Include="app\scripts\Toaster\angular-toastr.css" />
+    <Content Include="app\scripts\Toaster\angular-toastr.js" />
+    <Content Include="app\scripts\Toaster\angular-toastr.min.css" />
+    <Content Include="app\scripts\Toaster\angular-toastr.min.js" />
+    <Content Include="app\scripts\Toaster\angular-toastr.tpls.js" />
+    <Content Include="app\scripts\Toaster\angular-toastr.tpls.min.js" />
+    <Content Include="app\services\dataAccess.js.aspx" />
+    <Content Include="app\views\Config\config.html" />
+    <Content Include="app\views\Config\config.js" />
+    <Content Include="app\views\Login\login.html" />
+    <Content Include="app\views\Login\login.js" />
+    <Content Include="app\views\Login\loginEdit.html" />
+    <Content Include="app\views\Main\main.html" />
+    <Content Include="app\views\Main\main.js" />
+    <Content Include="app\views\Menu\nav.js" />
+    <Content Include="app\views\Menu\nav.html" />
+    <Content Include="app\views\Mode\modeEdit.html" />
+    <Content Include="app\views\Mode\mode.html" />
+    <Content Include="app\views\Mode\mode.js" />
+    <Content Include="app\views\Permission\permissionEdit.html" />
+    <Content Include="app\views\Permission\permission.html" />
+    <Content Include="app\views\Permission\permission.js" />
+    <Content Include="app\views\Role\roleEdit.html" />
+    <Content Include="app\views\Server\server.html" />
+    <Content Include="app\views\Server\server.js" />
+    <Content Include="app\views\Server\serverEdit.html" />
+    <Content Include="app\views\modeConfig\modeConfig.html" />
+    <Content Include="app\views\modeConfig\modeConfig.controller.js" />
+    <Content Include="app\views\modeConfig\modeConfig-edit.html" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="app\scripts\angular-material-data-table\.bower.json" />
+    <Content Include="app\scripts\angular-material-data-table\ARCHIVE.md" />
+    <Content Include="app\scripts\angular-material-data-table\bower.json" />
+    <Content Include="app\scripts\angular-material-data-table\LICENSE.md" />
+    <Content Include="app\scripts\angular-material-data-table\package.json" />
+    <Content Include="app\scripts\angular-material-data-table\README.md" />
+    <None Include="Properties\PublishProfiles\AI-DEV-WWW-03.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\App.js" />
+    <Content Include="app\views\Role\role.js" />
+    <Content Include="index.html" />
+    <Content Include="app\partial\permissionAdd.html" />
+    <Content Include="styles\bootstrap-theme.min.css" />
+    <Content Include="styles\bootstrap.css" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="styles\jquery.gritter.css" />
+    <Content Include="styles\jquery.gritter0.css" />
+    <Content Include="styles\sb-admin-rtl.css" />
+    <Content Include="styles\style-responsive.css" />
+    <Content Include="styles\style.css" />
+    <Content Include="styles\table-responsive.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app\services\dataAccess.js.aspx.cs">
+      <DependentUpon>dataAccess.js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\services\dataAccess.js.aspx.designer.cs">
+      <DependentUpon>dataAccess.js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\common\" />
+    <Folder Include="img\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60947</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60947/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
